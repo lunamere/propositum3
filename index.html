@@ -4,13 +4,193 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
-    <link rel="stylesheet" href="./styles.css">
-    <!--link rel="icon" href="./favicon.ico" type="image/x-icon"-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,WONK@0,9..144,100..900,1;1,9..144,100..900,1&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <main>
-        <h1>Welcome to My Website</h1>  
+      <div id="progressTracker">
+        <div class="progressDot" id="dot1" data-thumbnail="thumb/slide1.png"></div>
+        <div class="progressDot" id="dot2" data-thumbnail="thumb/slide2.png"></div>
+        <div class="progressDot" id="dot3" data-thumbnail="thumb/slide3.png"></div>
+        <div class="progressDot" id="dot4" data-thumbnail="thumb/slide4.png"></div>
+        <div class="progressDot" id="dot5" data-thumbnail="thumb/slide5.png"></div>
+        <div class="progressDot" id="dot6" data-thumbnail="thumb/slide6.png"></div>
+        <div class="progressDot" id="dot7" data-thumbnail="thumb/slide7.png"></div>
+        <div class="progressDot" id="dot8" data-thumbnail="thumb/slide8.png"></div>
+        <div class="progressDot" id="dot9" data-thumbnail="thumb/slide9.png"></div>
+        <div id="slidePreview"><img src="" alt="Slide preview" id="previewImg" /></div>
+      </div>
+      <div class="button" id="main-button">
+        <svg id="arrow" width="100%" height="100%" viewBox="0 0 300 300" fill="none" stroke="#E453AC" stroke-width="12">
+          <path d="M50,150 L250,150"/>
+          <path d="M150,75 L250,150 L150,225"/>
+          <circle cx="150" cy="150" r="140"/>
+        </svg>
+      </div>
+      <article id="slide1">
+        <h1>Topic: Facial Recognition</h1>
+        <section class="contemporary">
+          <div class="circle-container">
+            <h2>Contemporary<br><big>Racist</big><br>Technology</h2>
+          </div>
+        </section>
+        <section>
+          <h2>v.s.</h2>
+        </section>
+        <section class="future">
+          <div class="circle-container">
+            <h2>Future<br><big>Abolitionist</big><br>Technology</h2>
+          </div>
+        </section> 
+      </article>
+      <article id="slide2">
+        <p class="big-text">
+          <span class="ani" id="span1">Did you know</span><br>
+          <span class="line ani" id="span2">that the <i>average</i> person</span><br>
+          <span class="line ani" id="span3">in the United States is caught on</span><br>
+          <span class="line ani" id="span4">CCTV security cameras</span><br>
+          <span class="line ani" id="span5">around <big>70</big> times a day?</span>
+        </p>
+      </article> 
+      <article id="slide3">
+        <h2>However, Modern surveillance doesn't really see... you</h2>
+        <img id="security-camera" src="media/security-camera.png" width="600">
+      </article>
+      <article id="slide4">
+        <div id="face-scan">
+          <img class="ani ani2" src="media/man-scanned.jpg" height="300" width="300">
+          <img class="ani ani2" id="unscanned" src="media/man-original.jpg" height="300" width="300">
+        </div>
+        <div id="matches">
+          <div class="match"><img class="ani ani2" src="media/man-1.jpg" height="300" width="300"></div>
+          <div class="match"><img class="ani ani2" src="media/man-2.jpg" height="300" width="300"></div>
+          <div class="match"><img class="ani ani2" src="media/man-3.jpg" height="300" width="300"></div>
+        </div>
+        <div class="text-box">
+          <h2 class="visible text-1" id="text-0">This is because facial recognition AI doesn't <span>see</span> faces the we do.</h2>
+          <p class="visible text-1" id="text-1">It breaks a face down into numerical patterns: distances between eyes, nose width, mouth shape, jawline angles, skin "brightness" patterns, etc. Then it searches its database for faces that are "mathematically similar".</p>
+          <p class="hidden" id="text-2">However, facial recognition is trained on databases that are are often majority white, majority male, and majority young. This, only produces biased outcomes—misidentifying Black and Brown faces more often.</p> 
+          <div class="button content" id="btn-2">
+            <svg id="arrow" width="100%" height="100%" viewBox="0 0 300 300" fill="none" stroke="#E453AC" stroke-width="12">
+              <path d="M50,150 L250,150"/>
+              <path d="M150,75 L250,150 L150,225"/>
+              <circle cx="150" cy="150" r="140"/>
+            </svg>
+          </div>
+        </div>
+      </article>
+      <article id="slide5">
+        <div class="victims">
+          <!--h2>This is only a Fraction of how many people have been effected</h2-->
+          <!--div class="victim">
+            <img src="media/nijeer-parks.jpg" height="200" width="200">
+            <h3>Nijeer Parks</h3>
+            <p>2019</p>
+          </div-->
+          <h2 class="ani">These are just some of the lives harmed by surveillance systems built on <b>racism and systemic injustice.</b></h2>
+          <div class="victim robert ani">
+            <img src="media/robert-williams.jpg" height="200" width="200">
+            <h3>Robert Williams</h3>
+            <h4>2020</h4>
+            <p>He was arrested for shoplifting in front of his family—he was nowhere near the store at the time of the theft.</p>
+            <a href="https://www.aclu.org/cases/williams-v-city-of-detroit-face-recognition-false-arrest" target="_blank">Read More</a>
+          </div>
+          <div class="victim randal ani">
+            <img src="media/randall-q-reid.jpg" height="200" width="200">
+            <h3>Randal Quran Reid</h3>
+            <h4>2022</h4>
+            <p>While living in Georgia, facial recognition linked him to a crime in Louisiana—a state he's never even been to. He spent 6 Days in jail, before the charges were dropped.</p>
+            <a href="https://www.nbcnews.com/news/nbcblk/black-plaintiffs-file-lawsuits-wrongful-arrests-jailing-due-facial-rec-rcna117168" target="_blank" class="link">Read More</a>
+          </div>
+          <div class="victim porcha ani">
+            <img src="media/porcha-woodruff.jpg" height="200" width="200">
+            <h3>Porcha Woodruff</h3>
+            <h4>2023</h4>
+            <p>Wrongfully arrested for robbery and carjacking, at 8 months pregnant.</p>
+            <a href="https://www.nbcnews.com/news/us-news/detroit-woman-sues-city-falsely-arrested-8-months-pregnant-due-facial-rcna98447" target="_blank">Read More</a>
+          </div>
+          <div class="victim harvey ani">
+            <img src="media/harvey-murphy.jpg" height="200" width="200">
+            <h3>Harvey Eugene Murphy Jr.</h3>
+            <h4>2023</h4>
+            <p>The Black 61-year-old was arrested for an armed robbery he did not commit—he was 2000 miles away. During his 10 days in jail, he was brutally beaten and gang-raped by three inmates.</p>
+            <a href="https://www.vice.com/en/article/man-jailed-raped-and-beaten-after-false-facial-recognition-match-dollar10m-lawsuit-alleges/" target="_blank">Read More</a>
+          </div>
+        </div>
+      </article>
+      <article id="slide6">
+        <p class="big-text ani">Right now,<br>Facial Recognition Software<br>is Being <big>Abused</big> by the Government,<br>to <u>Surveil Protests</u> & <mark>Track Immigrants</mark></p>
+        <div class="immis hidden ani">
+          <h2>Some non-citizen Pro-Palestinian student protesters have already been detained by the Trump Adminstration.</h2>
+          <div class="immi">
+            <img src="media/mahmoud-khalil.jpg" height="300" width="300">
+            <h3>Mahmoud Khalil</h3>
+            <p>Graduate Student at Columbia University</p>
+            <a href="https://www.cnn.com/2025/03/24/us/mahmoud-khalil-green-card-trump-administration/index.html" target="_blank">Read More</a>
+          </div>
+          <div class="immi">
+            <img src="media/rumeysa-ozturk.jpg" height="300" width="300">
+            <h3>Rümeysa Öztürk</h3>
+            <p>Graduate Student at Tufts University</p>
+            <a href="https://www.aclu.org/press-releases/rumeysa-ozturks-legal-team-to-urge-appeals-court-to-not-delay-students-transfer-to-vermont" target="_blank">Read More</a>
+          </div>
+          <div class="immi">
+            <img src="media/badar-khan-suri.jpg" height="300" width="300">
+            <h3>Badar Khan Suri</h3>
+            <p>Researcher at Georgetown University</p>
+            <a href="https://www.npr.org/2025/04/11/g-s1-59580/jewish-students-at-georgetown-protest-detention-of-professor-badar-khan-suri" target="_blank">Read More</a>
+          </div>
+        </div>
+        <div class="button content ani" id="btn-3">
+          <svg id="arrow" width="100%" height="100%" viewBox="0 0 300 300" fill="none" stroke="#E453AC" stroke-width="12">
+            <path d="M50,150 L250,150"/>
+            <path d="M150,75 L250,150 L150,225"/>
+            <circle cx="150" cy="150" r="140"/>
+          </svg>
+        </div>
+      </article>
+      <article id="slide7">
+        <p class="big-text ani">So, what would<br><big>Abolitionist</big><br> CCTV look like?</p>
+      </article> 
+      <article id="slide8">
+        <p>In a future where <u>consent is prioritized</u>, public spaces use cameras that blur faces by default—a concept already being explored today.<br><br>The European Data Protection Board (EDPB) now encourages CCTV operators to blur faces, <mark>warning that failure to do so may violate the EU's General Data Protection Regulation (GDPR).</mark> This regulation strictly limits how personal data — including biometric data like facial images — can be collected and used without consent.<br><br>The consequences? Hefty fines, lawsuits, and growing pressure to redesign surveillance for privacy.</p>
+        <div id="resize-container">
+          <div class="image-box blurred">
+            <img src="media/people_blurred_faces.jpg" height="600" width="1000">
+          </div>
+          <div class="image-box scanned" id="resizable-box">
+            <img src="media/people_scanned_faces.jpg" height="600" width="1000">
+          </div>
+          <div id="resizer">
+            <div class="circle"></div>
+          </div>
+        </div>
+      </article> 
+      <article id="slide9">
+        <div id="sources-button">
+          <div id="sb-inner">
+            <div class="" id="open">SOURCES</div>
+            <div class="inactive" id="close">CLOSE</div>
+          </div>
+        </div>
+        <section class="inactive" id="sources-page">
+          <h2>Sources</h2>
+          <p>Calabrese, Julianna. “Why Organizations Use Face Blurring Software for CCTV.” <i>Sighthound Redactor,</i> 20 July 2022, www.redactor.com/blog/why-do-organizations-need-face-blurring-software-for-cctv.</p>
+          <p>Fergus, Rachel. “Biased Technology: The Automated Discrimination of Facial Recognition.” <i>ACLU of Minnesota</i>, 29 Feb 2024, https://www.aclu-mn.org/en/news/biased-technology-automated-discrimination-facial-recognition</p>
+          <p>Goode, Lauren; et al. “How Americans Are Surveilled During Protests.” <i>Wired</i>, 17 April 2025, https://www.wired.com/story/uncanny-valley-podcast-how-americans-are-surveilled-during-protests/.</p>
+          <p>Kelly, Makena and Elliot, Vittoria. “DOGE Is Building a Master Database to Surveil and Track Immigrants.” <i>Wired</i>, 18 April 2025, https://www.wired.com/story/doge-collecting-immigrant-data-surveil-track/</p>
+          <p><span>All Accessed 25 April 2025.</span></p>
+        </section>
+        <div class="ani" id="slide9-inner">
+          <h2>Facial Recognition isn’t Broken — Surveillance is.</h2>
+          <img id="broken-down-camera" src="media/broken-down-camera.png" width="500" height="500">
+          <p>Surveillance has never been neutral, and the harm it causes isn’t accidental.<br>Today, the U.S. is not centered around dignity, consent, or community.<br>But technology is evolving — and the tools we build can protect rather than punish.<br>We can design systems that see people as human, not just data points.</p>
+        </div>
+      </article> 
     </main>
-    <!--script src="index.js"></script-->
+    <script src="index.js"></script>
   </body>
 </html>
