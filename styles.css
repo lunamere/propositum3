@@ -1038,7 +1038,11 @@ a {
 	font-size: 0.83em;
 }
 
-
+@media only screen and (max-height: 700px) {
+  #resize-container {
+    transform: scale(0.8);
+  }
+}
 
 
 
