@@ -9,8 +9,29 @@ html, body {
 	color: white;
 }
 
+
 body {
 	overflow: hidden;
+}
+
+#layout {
+	position: absolute;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: 1fr;
+	//grid-column-gap: 2px;
+	//background-color: red;
+	width: 100vw;
+	height: 300vh;
+	top: 0;
+	left: 0;
+	z-index: 12;
+	pointer-events: none;
+}
+
+#layout div {
+	height: 100%;
+	border: 1px solid blue;
 }
 
 main {
@@ -90,7 +111,7 @@ p.big-text i {
 }
 
 a {
-  font-size: 12px;
+  	font-size: 12px;
 	text-decoration: none;
 	color: currentColor;
 	text-transform: uppercase;
@@ -104,7 +125,7 @@ a {
 	align-items: end;
 }
 
-/*---------------------------------------OTHER GLOBAL STYLES---------------------------------------*/
+
 .button {
 	width: 30px;
 	height: 30px;
@@ -336,8 +357,6 @@ a {
 
 #face-scan {
 	position: relative;
-	height: 300px;
-	width: 300px;
 }
 
 #face-scan img {
@@ -347,7 +366,7 @@ a {
 }
 
 #face-scan img.ani {
-	transform: translateY(200px);
+	transform: translateY(80%);
 }
 
 #unscanned {
@@ -370,13 +389,10 @@ a {
 
 .match {
 	position: relative;
-	width: 300px;
-	height: 300px;
 }
 
 .match img {
-	object-fit: cover;
-	object-position: top;
+	//object-position: top;
 	position: absolute;
 	left: 0;
 	transition: transform 0.75s, opacity 0.4s, left 0.6s;
@@ -402,7 +418,7 @@ a {
 
 
 #slide4 .text-box {
-	width: 800px;
+	padding: 0 16.7%;
 	opacity: 1;
 	transition: opacity 0.6s ease;
 }
@@ -434,15 +450,17 @@ a {
 #slide5 {
 	position: relative;
 	display: flex;
-	justify-content: center;
-	place-items: center;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 8.3% 0;
 }
 
 #slide5 h2 {
-	position: absolute;
-	top: 60px;
+	/*top: 60px;
 	left: 50%;
-	translate: -50% 0;
+	translate: -50% 0;*/
+	width: 50%;
 	opacity: 1;
 	transition: opacity 0.75s ease;
 	transition-delay: 800ms;
@@ -695,9 +713,6 @@ a {
 #slide6 p.big-text.ani mark::before {
 	width: 0;
 }
-
-
-
 
 
 
@@ -1042,6 +1057,9 @@ a {
 #sources-page span {
 	font-size: 0.83em;
 }
+
+
+
 
 
 
