@@ -633,6 +633,7 @@ a {
 	display: flex;
 	flex-flow: column nowrap;
 	width: 100%;
+	padding-left: 8.3%;
 }
 
 #slide6 p.big-text {
