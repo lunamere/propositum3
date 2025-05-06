@@ -632,6 +632,7 @@ a {
 #slide6 .wrap-box {
 	display: flex;
 	flex-flow: column nowrap;
+	row-gap: 20px;
 	width: 100%;
 	padding-left: 8.3%;
 }
