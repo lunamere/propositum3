@@ -632,10 +632,10 @@ a {
 #slide6 .wrap-box {
 	display: flex;
 	flex-flow: column nowrap;
+	width: 100%;
 }
 
 #slide6 p.big-text {
-	width: 83.3%;
 	filter: blur(0);
 	opacity: 1;
 	transform: scale(1);
