@@ -451,9 +451,8 @@ a {
 	position: relative;
 	display: flex;
 	flex-flow: column nowrap;
-	justify-content: space-between;
 	align-items: center;
-	padding: 8.3% 0;
+	padding-top: 8.3%;
 }
 
 #slide5 h2 {
@@ -482,6 +481,7 @@ a {
 }
 
 .victims {
+	margin-top: 20px;
 	display: flex;
 	flex-flow: row nowrap;
 	column-gap: 20px;
