@@ -8,6 +8,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,WONK@0,9..144,100..900,1;1,9..144,100..900,1&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <style type="text/css">
+      .squareThirty {
+        width: clamp(150px, 35vh, 300px);
+        height: clamp(150px, 35vh, 300px);
+      }
+
+      .squareFifty {
+        width: clamp(250px, 60vh, 500px);
+        height: clamp(250px, 60vh, 500px);
+      }
+
+      .objectFit {
+        object-position: top;
+        object-fit: cover;
+      }
+  
+    </style>
   </head>
   <body>
     <main>
@@ -60,17 +77,17 @@
         <img id="security-camera" src="media/security-camera.png" width="600">
       </article>
       <article id="slide4">
-        <div id="face-scan">
-          <img class="ani ani2" src="media/man-scanned.jpg" height="300" width="300">
-          <img class="ani ani2" id="unscanned" src="media/man-original.jpg" height="300" width="300">
+        <div class="squareThirty" id="face-scan">
+          <img class="ani ani2" src="media/man-scanned.jpg" height="100%">
+          <img class="ani ani2" id="unscanned" src="media/man-original.jpg" height="100%">
         </div>
         <div id="matches">
-          <div class="match"><img class="ani ani2" src="media/man-1.jpg" height="300" width="300"></div>
-          <div class="match"><img class="ani ani2" src="media/man-2.jpg" height="300" width="300"></div>
-          <div class="match"><img class="ani ani2" src="media/man-3.jpg" height="300" width="300"></div>
+          <div class="match squareThirty"><img class="ani ani2 objectFit" src="media/man-1.jpg" height="100%" width="100%"></div>
+          <div class="match squareThirty"><img class="ani ani2 objectFit" src="media/man-2.jpg" height="100%" width="100%"></div>
+          <div class="match squareThirty"><img class="ani ani2 objectFit" src="media/man-3.jpg" height="100%" width="100%"></div>
         </div>
         <div class="text-box">
-          <h2 class="visible text-1" id="text-0">This is because facial recognition AI doesn't <span>see</span> faces the way we do.</h2>
+          <h2 class="visible text-1" id="text-0">This is because facial recognition AI doesn't <span>see</span> faces the we do.</h2>
           <p class="visible text-1" id="text-1">It breaks a face down into numerical patterns: distances between eyes, nose width, mouth shape, jawline angles, skin "brightness" patterns, etc. Then it searches its database for faces that are "mathematically similar".</p>
           <p class="hidden" id="text-2">However, facial recognition is trained on databases that are are often majority white, majority male, and majority young. This, only produces biased outcomes—misidentifying Black and Brown faces more often.</p> 
           <div class="button content" id="btn-2">
@@ -83,13 +100,8 @@
         </div>
       </article>
       <article id="slide5">
+        <h2 class="ani">These are just some of the lives harmed by surveillance systems built on <b>racism and systemic injustice.</b></h2>
         <div class="victims">
-          <!--div class="victim">
-            <img src="media/nijeer-parks.jpg" height="200" width="200">
-            <h3>Nijeer Parks</h3>
-            <p>2019</p>
-          </div-->
-          <h2 class="ani">These are just some of the lives harmed by surveillance systems built on <b>racism and systemic injustice.</b></h2>
           <div class="victim robert ani">
             <img src="media/robert-williams.jpg" height="200" width="200">
             <h3>Robert Williams</h3>
@@ -97,6 +109,7 @@
             <p>He was arrested for shoplifting in front of his family—he was nowhere near the store at the time of the theft.</p>
             <a href="https://www.aclu.org/cases/williams-v-city-of-detroit-face-recognition-false-arrest" target="_blank">Read More</a>
           </div>
+
           <div class="victim randal ani">
             <img src="media/randall-q-reid.jpg" height="200" width="200">
             <h3>Randal Quran Reid</h3>
@@ -104,6 +117,7 @@
             <p>While living in Georgia, facial recognition linked him to a crime in Louisiana—a state he's never even been to. He spent 6 Days in jail, before the charges were dropped.</p>
             <a href="https://www.nbcnews.com/news/nbcblk/black-plaintiffs-file-lawsuits-wrongful-arrests-jailing-due-facial-rec-rcna117168" target="_blank" class="link">Read More</a>
           </div>
+
           <div class="victim porcha ani">
             <img src="media/porcha-woodruff.jpg" height="200" width="200">
             <h3>Porcha Woodruff</h3>
@@ -111,6 +125,7 @@
             <p>Wrongfully arrested for robbery and carjacking, at 8 months pregnant.</p>
             <a href="https://www.nbcnews.com/news/us-news/detroit-woman-sues-city-falsely-arrested-8-months-pregnant-due-facial-rcna98447" target="_blank">Read More</a>
           </div>
+
           <div class="victim harvey ani">
             <img src="media/harvey-murphy.jpg" height="200" width="200">
             <h3>Harvey Eugene Murphy Jr.</h3>
@@ -185,7 +200,7 @@
         </section>
         <div class="ani" id="slide9-inner">
           <h2>Facial Recognition isn’t Broken — Surveillance is.</h2>
-          <img id="broken-down-camera" src="media/broken-down-camera.png" width="500" height="500">
+          <img id="broken-down-camera" src="media/broken-down-camera.png" class="squareFifty">
           <p>Surveillance has never been neutral, and the harm it causes isn’t accidental.<br>Today, the U.S. is not centered around dignity, consent, or community.<br>But technology is evolving — and the tools we build can protect rather than punish.<br>We can design systems that see people as human, not just data points.</p>
         </div>
       </article> 
