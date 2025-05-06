@@ -14,26 +14,6 @@ body {
 	overflow: hidden;
 }
 
-#layout {
-	position: absolute;
-	display: grid;
-	grid-template-columns: repeat(6, 1fr);
-	grid-template-rows: 1fr;
-	//grid-column-gap: 2px;
-	//background-color: red;
-	width: 100vw;
-	height: 300vh;
-	top: 0;
-	left: 0;
-	z-index: 12;
-	pointer-events: none;
-}
-
-#layout div {
-	height: 100%;
-	border: 1px solid blue;
-}
-
 main {
 	width: 100vw;
 	padding-top: 20px;
@@ -717,12 +697,7 @@ a {
 	width: 0;
 }
 
-
-
 #btn-3 {
-	position: absolute;
-	left: 8.3%;
-	bottom: 150px;
 	transition: opacity 0.8s ease;
 }
 #slide6 .button {
