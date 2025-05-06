@@ -649,7 +649,10 @@ a {
 }
 
 
-
+#slide6 .wrap-box {
+	display: flex;
+	flex-flow: column nowrap;
+}
 
 #slide6 p.big-text {
 	width: 83.3%;
